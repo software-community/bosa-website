@@ -1,0 +1,41 @@
+.footer-container {
+  width: 100;
+}
+
+.footer-bg {
+  background-color: rgb(202, 200, 200);
+}
+
+.logo {
+  max-height: 100px;
+}
+
+.title-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.title-2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24;
+  font-weight: 700;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+.footer-end-text {
+  color: rgb(99, 99, 99);
+}
+
+.team-link {
+  text-decoration: none;
+  color: red;
+}
+
+.team-link:hover {
+  color: rgb(185, 0, 0);
+}

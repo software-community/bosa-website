@@ -1,0 +1,58 @@
+<nav
+  class="nav-menu d-flex p-2 fixed-top justify-content-center align-items-center"
+  [ngClass]="{ scrolled: isScrolled }"
+>
+  <!-- <div class="logo mx-auto"></div> -->
+  <div class="mx-auto d-flex">
+    <a class="nav-link nav-dropdown mx-3" routerLink="home">
+      <i class="fa-solid fa-house"></i>&nbsp;Home
+    </a>
+    <div class="dropdown-container">
+      <a class="nav-link mx-3"
+        ><i class="fa-solid fa-volleyball"></i> &nbsp;Sports&nbsp;<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+      <div class="dropdown-content bg-dark">
+        <a href="" class="dropdown-item">Athletics</a
+        ><a href="" class="dropdown-item">Badminton</a
+        ><a href="" class="dropdown-item">Basketball</a
+        ><a href="" class="dropdown-item">Cricket</a
+        ><a href="" class="dropdown-item">Football</a
+        ><a href="" class="dropdown-item">Hockey</a
+        ><a href="" class="dropdown-item">Lawn Tennis</a
+        ><a href="" class="dropdown-item">Table Tennis</a
+        ><a href="" class="dropdown-item">Volley Ball</a
+        ><a href="" class="dropdown-item">Weight Lifting</a>
+      </div>
+    </div>
+
+    <div class="dropdown-container">
+      <a class="nav-link nav-dropdown mx-3"
+        ><i class="fa-solid fa-medal"></i>&nbsp;Inter IIT&nbsp;<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+      <div class="dropdown-content bg-dark">
+        <a href="" class="dropdown-item">About Inter IIT</a
+        ><a href="" class="dropdown-item">Points Tally</a>
+      </div>
+    </div>
+
+    <div class="dropdown-container">
+      <a class="nav-link nav-dropdown mx-3"
+        ><i class="fa-solid fa-link"></i>&nbsp;Important Links&nbsp;<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+      <div class="dropdown-content bg-dark">
+        <a href="" class="dropdown-item">BOSA Gallery</a
+        ><a href="" class="dropdown-item">IIT Ropar Website</a>
+      </div>
+    </div>
+
+    <a class="nav-link nav-dropdown mx-3" routerLink="contacts">
+      <i class="fa-solid fa-address-book"></i>&nbsp;Contact
+    </a>
+  </div>
+</nav>
