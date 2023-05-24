@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ContactsComponent } from './pages/contacts/contacts.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    ContactsComponent
+
+    AboutComponent
     ],
   imports: [
     BrowserModule,

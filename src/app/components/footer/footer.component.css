@@ -12,12 +12,12 @@
 
 .title-1 {
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   font-weight: 800;
 }
 
 .title-2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 24;
   font-weight: 700;
 }
 
@@ -27,13 +27,53 @@
   background-color: rgba(0, 0, 0, 0.568);
 }
 
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.heading-s {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.footer-text-normal {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.616);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.616);
+  font-weight: 500;
+  padding-left: 0px;
+  /* font-size: 20px; */
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.link:hover {
+  padding-left: 10px;
+  font-weight: 600;
+}
+
 .footer-end-text {
-  color: rgb(99, 99, 99);
+  color: rgb(121, 121, 121);
 }
 
 .team-link {
   text-decoration: none;
   color: red;
+  transition: all 0.25s ease-in-out;
 }
 
 .team-link:hover {

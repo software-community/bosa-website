@@ -1,3 +1,5 @@
+/* CArousel CSS */
+
 .carousel-item {
   height: 80vh;
   object-fit: cover;
@@ -255,4 +257,43 @@
   background-image: url("src/assets/img/gallery/img-4.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/* Carousel CSS ends*/
+
+.logo {
+  max-height: 150px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.gallery-img {
+  /* display: block; */
+  width: 100%;
+  margin: 5px;
+  max-height: 400px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.gallery-img:hover {
+  transform: scale(0.975);
+  cursor: pointer;
 }
