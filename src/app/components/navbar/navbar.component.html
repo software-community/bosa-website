@@ -3,56 +3,65 @@
   [ngClass]="{ scrolled: isScrolled }"
 >
   <!-- <div class="logo mx-auto"></div> -->
-  <div class="mx-auto d-flex">
-    <a class="nav-link nav-dropdown mx-3" routerLink="bosa">
-      <i class="fa-solid fa-house"></i>&nbsp;Home
-    </a>
-    <div class="dropdown-container">
-      <a class="nav-link mx-3"
-        ><i class="fa-solid fa-volleyball"></i> &nbsp;Sports&nbsp;<i
-          class="fa-solid fa-caret-down"
-        ></i
-      ></a>
-      <div class="dropdown-content bg-dark">
-        <a href="" class="dropdown-item">Athletics</a
-        ><a href="" class="dropdown-item">Badminton</a
-        ><a href="" class="dropdown-item">Basketball</a
-        ><a href="" class="dropdown-item">Cricket</a
-        ><a href="" class="dropdown-item">Football</a
-        ><a href="" class="dropdown-item">Hockey</a
-        ><a href="" class="dropdown-item">Lawn Tennis</a
-        ><a href="" class="dropdown-item">Table Tennis</a
-        ><a href="" class="dropdown-item">Volley Ball</a
-        ><a href="" class="dropdown-item">Weight Lifting</a>
+
+  <div class="mx-auto d-flex align-items-center">
+    <div
+      (click)="onLogoClicked()"
+      class="d-flex align-items-center me-5 logo-container"
+    >
+      <img class="logo me-2" src="assets/logo/bosa-white-bg.png" alt="" />
+      <div>
+        <div class="logo-text">Board of Sports Activities</div>
+        <div class="logo-text">IIT Ropar</div>
       </div>
     </div>
-
-    <!-- <div class="dropdown-container">
-      <a class="nav-link nav-dropdown mx-3"
-        ><i class="fa-solid fa-medal"></i>&nbsp;Inter IIT&nbsp;<i
-          class="fa-solid fa-caret-down"
-        ></i
-      ></a>
-      <div class="dropdown-content bg-dark">
-        <a href="" class="dropdown-item">About Inter IIT</a
-        ><a href="" class="dropdown-item">Points Tally</a>
+    <div class="d-none d-lg-flex align-items-center">
+      <a class="nav-link nav-dropdown me-3 ms-5" routerLink="home">
+        <i class="fa-solid fa-house"></i>&nbsp;Home
+      </a>
+      <div class="dropdown-container">
+        <a class="nav-link mx-3"
+          ><i class="fa-solid fa-volleyball"></i> &nbsp;Sports&nbsp;<i
+            class="fa-solid fa-caret-down"
+          ></i
+        ></a>
+        <div class="dropdown-content bg-dark">
+          <a routerLink="athletics" class="dropdown-item">Athletics</a
+          ><a routerLink="badminton" class="dropdown-item">Badminton</a
+          ><a routerLink="basketball" class="dropdown-item">Basketball</a
+          ><a routerLink="chess" class="dropdown-item">Chess</a
+          ><a routerLink="cricket" class="dropdown-item">Cricket</a
+          ><a routerLink="football" class="dropdown-item">Football</a
+          ><a routerLink="hockey" class="dropdown-item">Hockey</a
+          ><a routerLink="lawnTennis" class="dropdown-item">Lawn Tennis</a
+          ><a routerLink="tableTennis" class="dropdown-item">Table Tennis</a
+          ><a routerLink="volleyball" class="dropdown-item">Volley Ball</a
+          ><a routerLink="weightlifting" class="dropdown-item"
+            >Weight Lifting</a
+          >
+        </div>
       </div>
-    </div> -->
 
-    <div class="dropdown-container">
-      <a class="nav-link nav-dropdown mx-3"
-        ><i class="fa-solid fa-link"></i>&nbsp;Important Links&nbsp;<i
-          class="fa-solid fa-caret-down"
-        ></i
-      ></a>
-      <div class="dropdown-content bg-dark">
-        <a href="" class="dropdown-item">BOSA Gallery</a
-        ><a href="" class="dropdown-item">IIT Ropar Website</a>
+      <div class="dropdown-container">
+        <a class="nav-link nav-dropdown mx-3"
+          ><i class="fa-solid fa-link"></i>&nbsp;Important Links&nbsp;<i
+            class="fa-solid fa-caret-down"
+          ></i
+        ></a>
+        <div class="dropdown-content bg-dark">
+          <a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
+          ><a
+            href="http://www.iitrpr.ac.in/"
+            target="_blank"
+            class="dropdown-item"
+            >IIT Ropar Website</a
+          >
+        </div>
       </div>
+
+      <a class="nav-link nav-dropdown mx-3" routerLink="about">
+        <i class="fa-solid fa-address-card"></i>&nbsp;About
+      </a>
     </div>
-
-    <a class="nav-link nav-dropdown mx-3" routerLink="about">
-      <i class="fa-solid fa-address-card"></i>&nbsp;About
-    </a>
   </div>
 </nav>

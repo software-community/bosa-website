@@ -77,10 +77,10 @@
       <div class="title">Board Of Sports Activites, IIT Ropar</div>
     </div>
   </div>
-  <div class="row row-cols-2">
-    <div class="col">
-      <div class="heading my-4">Our Mission</div>
-      <p>
+  <div class="row row-cols-1 row-cols-xl-2">
+    <div class="col" data-aos="zoom-in" data-aos-delay="100">
+      <div class="heading my-4 p-3">Our Mission</div>
+      <p class="px-3">
         "Sports do not build character. They reveal it." It is often said that
         the key to a sharp mind is a healthy body and therefore to make its
         students "healthy, wealthy and wise" IIT Ropar lays a huge emphasis on
@@ -94,10 +94,41 @@
         events.
       </p>
     </div>
-    <div class="col"></div>
+    <div class="col d-none d-xl-block">
+      <div class="image-grid p-3 row row-cols-2 g-3 my-3s">
+        <div class="col">
+          <img src="assets/img/gallery/img-9.jpg" alt="Image1" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-10.jpg" alt="Image2" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-11.jpg" alt="Image3" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-12.jpg" alt="Image4" />
+        </div>
+      </div>
+    </div>
     <div class="col">
-      <div class="heading my-4">Aarohan</div>
-      <p>
+      <div class="image-grid p-3 row row-cols-2 g-3 my-3">
+        <div class="col">
+          <img src="assets/img/gallery/img-1.jpg" alt="Image1" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-2.jpg" alt="Image2" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-3.jpg" alt="Image3" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-4.jpg" alt="Image4" />
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="zoom-in" data-aos-delay="100">
+      <div class="heading my-4 p-3">Aarohan</div>
+      <p class="px-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum ea
         provident magnam inventore. Rem voluptate odit esse quibusdam, cum totam
         enim in, similique atque sit eligendi! Possimus exercitationem expedita
@@ -111,10 +142,9 @@
         Quaerat, facilis!
       </p>
     </div>
-    <div class="col"></div>
-    <div class="col">
-      <div class="heading my-4">Inter IIT</div>
-      <p>
+    <div class="col" data-aos="zoom-in" data-aos-delay="100">
+      <div class="heading my-4 p-3">Inter IIT</div>
+      <p class="px-3">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
         voluptates, aut distinctio quos explicabo in error illo numquam! Quod
         eligendi, ex natus iure odit expedita ab delectus nisi numquam
@@ -128,29 +158,70 @@
         numquam eius modi asperiores id laborum. Cum.
       </p>
     </div>
-    <div class="col"></div>
+    <div class="col">
+      <div class="image-grid p-3 row row-cols-2 g-3 my-3">
+        <div class="col">
+          <img src="assets/img/gallery/img-11.jpg" alt="Image1" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-12.jpg" alt="Image2" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-13.jpg" alt="Image3" />
+        </div>
+        <div class="col">
+          <img src="assets/img/gallery/img-14.jpg" alt="Image4" />
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Gallery -->
 <div class="w-100 bg-dark text-center p-4 text-light title">
-  Image Gallery<button type="button" class="btn btn-danger btn-lg ms-3">
-    View All
-  </button>
+  <div data-aos="zoom-in" data-aos-delay="100">
+    Image Gallery<button
+      type="button"
+      class="btn btn-danger btn-lg ms-3"
+      (click)="onGalleryButtonClicked()"
+    >
+      View All
+    </button>
+  </div>
 </div>
 <div class="w-100">
-  <div class="row row-cols-4 g-1">
+  <div class="image-holder row row-cols-2 row-cols-lg-4 g-0 bg-dark">
     <div class="col">
-      <img class="gallery-img" src="assets/img/gallery/img-5.jpg" alt="" />
+      <img
+        (click)="onImageClicked(5)"
+        class="gallery-img"
+        src="assets/img/gallery/img-5.jpg"
+        alt=""
+      />
     </div>
     <div class="col">
-      <img class="gallery-img" src="assets/img/gallery/img-9.jpg" alt="" />
+      <img
+        (click)="onImageClicked(9)"
+        class="gallery-img"
+        src="assets/img/gallery/img-9.jpg"
+        alt=""
+      />
     </div>
     <div class="col">
-      <img class="gallery-img" src="assets/img/gallery/img-7.jpg" alt="" />
+      <img
+        (click)="onImageClicked(7)"
+        class="gallery-img"
+        src="assets/img/gallery/img-7.jpg"
+        alt=""
+      />
     </div>
     <div class="col">
-      <img class="gallery-img" src="assets/img/gallery/img-8.jpg" alt="" />
+      <img
+        (click)="onImageClicked(8)"
+        class="gallery-img"
+        src="assets/img/gallery/img-8.jpg"
+        alt=""
+      />
     </div>
   </div>
 </div>

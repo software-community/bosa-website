@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
   carousel_index: string = 'F';
   interval_about: any;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.interval_about = setInterval(() => {
@@ -29,7 +32,17 @@ export class HomeComponent {
     }
   }
 
+  onImageClicked(index: number) {
+    const url: string = 'assets/img/gallery/img-'
+      .concat(index.toString())
+      .concat('.jpg');
+    window.open(url, '_blank');
+  }
   ngOnDestroy(): void {
     clearInterval(this.interval_about);
+  }
+
+  onGalleryButtonClicked(): void {
+    this.router.navigate(['/gallery']);
   }
 }

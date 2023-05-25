@@ -1,11 +1,14 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  constructor(private router: Router) {}
+
   isScrolled: boolean = false;
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -14,5 +17,8 @@ export class NavbarComponent {
     } else {
       this.isScrolled = false;
     }
+  }
+  onLogoClicked() {
+    this.router.navigate(['/home']);
   }
 }

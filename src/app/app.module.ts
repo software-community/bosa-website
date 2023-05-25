@@ -6,6 +6,18 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AthleticsComponent } from './pages/sports/athletics/athletics.component';
+import { BadmintonComponent } from './pages/sports/badminton/badminton.component';
+import { BasketballComponent } from './pages/sports/basketball/basketball.component';
+import { ChessComponent } from './pages/sports/chess/chess.component';
+import { CricketComponent } from './pages/sports/cricket/cricket.component';
+import { FootballComponent } from './pages/sports/football/football.component';
+import { HockeyComponent } from './pages/sports/hockey/hockey.component';
+import { LawnTennisComponent } from './pages/sports/lawn-tennis/lawn-tennis.component';
+import { TableTennisComponent } from './pages/sports/table-tennis/table-tennis.component';
+import { VolleyballComponent } from './pages/sports/volleyball/volleyball.component';
+import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifting.component';
 
 
 @NgModule({
@@ -15,7 +27,19 @@ import { AboutComponent } from './pages/about/about.component';
     HomeComponent,
     FooterComponent,
 
-    AboutComponent
+    AboutComponent,
+     GalleryComponent,
+     AthleticsComponent,
+     BadmintonComponent,
+     BasketballComponent,
+     ChessComponent,
+     CricketComponent,
+     FootballComponent,
+     HockeyComponent,
+     LawnTennisComponent,
+     TableTennisComponent,
+     VolleyballComponent,
+     WeightliftingComponent
     ],
   imports: [
     BrowserModule,
