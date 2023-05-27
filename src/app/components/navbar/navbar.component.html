@@ -1,31 +1,99 @@
 <nav
-  class="nav-menu d-flex p-2 fixed-top justify-content-center align-items-center"
+  class="nav-menu px-5 d-flex p-2 fixed-top justify-content-between align-items-center"
   [ngClass]="{ scrolled: isScrolled }"
 >
-  <!-- <div class="logo mx-auto"></div> -->
-
-  <div class="mx-auto d-flex align-items-center">
-    <div
-      (click)="onLogoClicked()"
-      class="d-flex align-items-center me-5 logo-container"
-    >
-      <img class="logo me-2" src="assets/logo/bosa-white-bg.png" alt="" />
-      <div>
-        <div class="logo-text">Board of Sports Activities</div>
-        <div class="logo-text">IIT Ropar</div>
+  <div
+    (click)="onLogoClicked()"
+    class="d-flex align-items-center me-5 logo-container"
+  >
+    <img class="logo me-2" src="assets/logo/bosa-white-bg.png" alt="" />
+    <div>
+      <div class="logo-text">Board of Sports Activities</div>
+      <div class="logo-text">IIT Ropar</div>
+    </div>
+  </div>
+  <div class="d-none d-lg-flex align-items-center">
+    <a class="nav-link nav-dropdown me-3 ms-5" routerLink="home">
+      <i class="fa-solid fa-house"></i>&nbsp;Home
+    </a>
+    <div class="dropdown-container">
+      <a class="nav-link mx-3"
+        ><i class="fa-solid fa-volleyball"></i> &nbsp;Sports&nbsp;<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+      <div class="dropdown-content bg-dark">
+        <a routerLink="athletics" class="dropdown-item">Athletics</a
+        ><a routerLink="badminton" class="dropdown-item">Badminton</a
+        ><a routerLink="basketball" class="dropdown-item">Basketball</a
+        ><a routerLink="chess" class="dropdown-item">Chess</a
+        ><a routerLink="cricket" class="dropdown-item">Cricket</a
+        ><a routerLink="football" class="dropdown-item">Football</a
+        ><a routerLink="hockey" class="dropdown-item">Hockey</a
+        ><a routerLink="lawnTennis" class="dropdown-item">Lawn Tennis</a
+        ><a routerLink="tableTennis" class="dropdown-item">Table Tennis</a
+        ><a routerLink="volleyball" class="dropdown-item">Volley Ball</a
+        ><a routerLink="weightlifting" class="dropdown-item">Weight Lifting</a>
       </div>
     </div>
-    <div class="d-none d-lg-flex align-items-center">
-      <a class="nav-link nav-dropdown me-3 ms-5" routerLink="home">
-        <i class="fa-solid fa-house"></i>&nbsp;Home
-      </a>
-      <div class="dropdown-container">
-        <a class="nav-link mx-3"
+
+    <div class="dropdown-container">
+      <a class="nav-link nav-dropdown mx-3"
+        ><i class="fa-solid fa-link"></i>&nbsp;Important Links&nbsp;<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+      <div class="dropdown-content bg-dark">
+        <a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
+        ><a
+          href="http://www.iitrpr.ac.in/"
+          target="_blank"
+          class="dropdown-item"
+          >IIT Ropar Website</a
+        >
+      </div>
+    </div>
+    <a class="nav-link nav-dropdown mx-3" routerLink="about">
+      <i class="fa-solid fa-address-card"></i>&nbsp;About
+    </a>
+  </div>
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="d-block d-lg-none">
+    <button
+      (click)="onMenuButtinClicked()"
+      type="button"
+      class="btn btn-danger"
+    >
+      <i class="fa-solid fa-bars-staggered menu-icon"></i>
+    </button>
+    <div
+      class="collapse-nav-menu"
+      [ngClass]="{ collapseOpen: isMenuOpen, scrolled: isScrolled }"
+    >
+      <div
+        class="nav-link-container-collapse border-top border-bottom py-2 mt-3"
+        (click)="onLogoClicked()"
+      >
+        <a
+          class="nav-link-collapse nav-dropdown mx-5 mt-4 mb-2"
+          routerLink="home"
+        >
+          <i class="fa-solid fa-house"></i>&nbsp;Home
+        </a>
+      </div>
+      <div
+        class="dropdown-container border-bottom py-2"
+        (click)="toggleDropDown('sports')"
+      >
+        <a class="nav-link-collapse mx-5 mb-2"
           ><i class="fa-solid fa-volleyball"></i> &nbsp;Sports&nbsp;<i
             class="fa-solid fa-caret-down"
           ></i
         ></a>
-        <div class="dropdown-content bg-dark">
+        <div
+          class="dropdown-content-collapse"
+          [ngClass]="{ dropdownContentCollapseOpen: isSportsDropDownOpen }"
+        >
           <a routerLink="athletics" class="dropdown-item">Athletics</a
           ><a routerLink="badminton" class="dropdown-item">Badminton</a
           ><a routerLink="basketball" class="dropdown-item">Basketball</a
@@ -42,13 +110,21 @@
         </div>
       </div>
 
-      <div class="dropdown-container">
-        <a class="nav-link nav-dropdown mx-3"
+      <div
+        class="dropdown-container border-bottom py-2"
+        (click)="toggleDropDown('importantLinks')"
+      >
+        <a class="nav-link-collapse nav-dropdown mx-5 mb-2"
           ><i class="fa-solid fa-link"></i>&nbsp;Important Links&nbsp;<i
             class="fa-solid fa-caret-down"
           ></i
         ></a>
-        <div class="dropdown-content bg-dark">
+        <div
+          class="dropdown-content-collapse"
+          [ngClass]="{
+            dropdownContentCollapseOpen: isImportantLinksDropDownOpen
+          }"
+        >
           <a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
           ><a
             href="http://www.iitrpr.ac.in/"
@@ -58,10 +134,14 @@
           >
         </div>
       </div>
-
-      <a class="nav-link nav-dropdown mx-3" routerLink="about">
-        <i class="fa-solid fa-address-card"></i>&nbsp;About
-      </a>
+      <div
+        class="nav-link-container-collapse border-bottom py-2"
+        (click)="openAbout()"
+      >
+        <a class="nav-link-collapse nav-dropdown mx-5 mb-2" routerLink="about">
+          <i class="fa-solid fa-address-card"></i>&nbsp;About
+        </a>
+      </div>
     </div>
   </div>
 </nav>

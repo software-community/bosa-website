@@ -1,12 +1,12 @@
 /* CArousel CSS */
 
 .carousel-item {
-  height: 80vh;
+  height: 30vh;
   object-fit: cover;
 }
 
 .image-carousel {
-  height: 80vh;
+  height: 30vh;
   width: auto;
   overflow: hidden;
   text-align: center;
@@ -313,4 +313,24 @@ p {
   transform: scale(0.975);
   filter: brightness(0.75);
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .image-carousel {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .carousel-item {
+    height: 80vh;
+  }
+
+  .image-carousel {
+    height: 80vh;
+  }
 }
