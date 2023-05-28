@@ -18,6 +18,7 @@ import { LawnTennisComponent } from './pages/sports/lawn-tennis/lawn-tennis.comp
 import { TableTennisComponent } from './pages/sports/table-tennis/table-tennis.component';
 import { VolleyballComponent } from './pages/sports/volleyball/volleyball.component';
 import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifting.component';
+import { PreloaderComponent } from './components/preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifti
     TableTennisComponent,
     VolleyballComponent,
     WeightliftingComponent,
+    PreloaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

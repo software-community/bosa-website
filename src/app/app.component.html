@@ -1,3 +1,4 @@
 <app-navbar *ngIf="!isLoading"></app-navbar>
 <router-outlet *ngIf="!isLoading"></router-outlet>
 <app-footer *ngIf="!isLoading"></app-footer>
+<app-preloader *ngIf="isLoading"></app-preloader>
