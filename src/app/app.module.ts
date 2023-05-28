@@ -19,33 +19,28 @@ import { TableTennisComponent } from './pages/sports/table-tennis/table-tennis.c
 import { VolleyballComponent } from './pages/sports/volleyball/volleyball.component';
 import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifting.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-
     AboutComponent,
-     GalleryComponent,
-     AthleticsComponent,
-     BadmintonComponent,
-     BasketballComponent,
-     ChessComponent,
-     CricketComponent,
-     FootballComponent,
-     HockeyComponent,
-     LawnTennisComponent,
-     TableTennisComponent,
-     VolleyballComponent,
-     WeightliftingComponent
-    ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
+    GalleryComponent,
+    AthleticsComponent,
+    BadmintonComponent,
+    BasketballComponent,
+    ChessComponent,
+    CricketComponent,
+    FootballComponent,
+    HockeyComponent,
+    LawnTennisComponent,
+    TableTennisComponent,
+    VolleyballComponent,
+    WeightliftingComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

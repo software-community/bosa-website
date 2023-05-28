@@ -1,5 +1,5 @@
 <nav
-  class="nav-menu px-5 d-flex p-2 fixed-top justify-content-between align-items-center"
+  class="nav-menu px-2 px-sm-5 d-flex p-2 fixed-top justify-content-between align-items-center"
   [ngClass]="{ scrolled: isScrolled }"
 >
   <div
@@ -94,17 +94,60 @@
           class="dropdown-content-collapse"
           [ngClass]="{ dropdownContentCollapseOpen: isSportsDropDownOpen }"
         >
-          <a routerLink="athletics" class="dropdown-item">Athletics</a
-          ><a routerLink="badminton" class="dropdown-item">Badminton</a
-          ><a routerLink="basketball" class="dropdown-item">Basketball</a
-          ><a routerLink="chess" class="dropdown-item">Chess</a
-          ><a routerLink="cricket" class="dropdown-item">Cricket</a
-          ><a routerLink="football" class="dropdown-item">Football</a
-          ><a routerLink="hockey" class="dropdown-item">Hockey</a
-          ><a routerLink="lawnTennis" class="dropdown-item">Lawn Tennis</a
-          ><a routerLink="tableTennis" class="dropdown-item">Table Tennis</a
-          ><a routerLink="volleyball" class="dropdown-item">Volley Ball</a
-          ><a routerLink="weightlifting" class="dropdown-item"
+          <a
+            (click)="onMenuButtinClicked()"
+            routerLink="athletics"
+            class="dropdown-item"
+            >Athletics</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="badminton"
+            class="dropdown-item"
+            >Badminton</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="basketball"
+            class="dropdown-item"
+            >Basketball</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="chess"
+            class="dropdown-item"
+            >Chess</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="cricket"
+            class="dropdown-item"
+            >Cricket</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="football"
+            class="dropdown-item"
+            >Football</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="hockey"
+            class="dropdown-item"
+            >Hockey</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="lawnTennis"
+            class="dropdown-item"
+            >Lawn Tennis</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="tableTennis"
+            class="dropdown-item"
+            >Table Tennis</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="volleyball"
+            class="dropdown-item"
+            >Volley Ball</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="weightlifting"
+            class="dropdown-item"
             >Weight Lifting</a
           >
         </div>
