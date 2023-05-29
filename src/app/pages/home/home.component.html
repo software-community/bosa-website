@@ -180,7 +180,7 @@
 </div>
 
 <!-- Gallery -->
-<div *ngIf="isLoading" class="w-100 bg-dark text-center p-4 text-light title">
+<div *ngIf="!isLoading" class="w-100 bg-dark text-center p-4 text-light title">
   <div data-aos="zoom-in" data-aos-delay="100">
     Image Gallery<button
       type="button"
@@ -191,7 +191,7 @@
     </button>
   </div>
 </div>
-<div class="w-100">
+<div *ngIf="!isLoading" class="w-100">
   <div class="image-holder row row-cols-2 row-cols-lg-4 g-0 bg-dark">
     <div class="col">
       <img
