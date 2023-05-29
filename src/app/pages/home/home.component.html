@@ -1,5 +1,7 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+
 <!-- Image Carousel -->
-<div class="carousel-container w-100">
+<div *ngIf="!isLoading" class="carousel-container w-100">
   <div class="image-carousel mx-auto my-carousel carousel--translate my-0">
     <input
       class="carousel__activator"
@@ -70,7 +72,7 @@
 
 <!-- Image carousel ends -->
 
-<div class="container mb-4">
+<div *ngIf="!isLoading" class="container mb-4">
   <div class="d-flex align-items-center justify-content-center">
     <img class="logo" src="assets/logo/bosa.png" />
     <div>
@@ -178,7 +180,7 @@
 </div>
 
 <!-- Gallery -->
-<div class="w-100 bg-dark text-center p-4 text-light title">
+<div *ngIf="isLoading" class="w-100 bg-dark text-center p-4 text-light title">
   <div data-aos="zoom-in" data-aos-delay="100">
     Image Gallery<button
       type="button"

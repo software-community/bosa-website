@@ -12,7 +12,30 @@ export class HomeComponent {
 
   constructor(private router: Router) {}
 
+  isLoading: boolean = true;
+
+  loaded = 0;
+
+  loadImages() {
+    for (let i = 1; i <= 15; i++) {
+      let img = new Image();
+      img.onload = () => {
+        this.load();
+      };
+      img.src = 'assets/img/gallery/img-'.concat(i.toString()).concat('.jpg');
+    }
+  }
+
+  load() {
+    this.loaded++;
+    if (15 == this.loaded) {
+      this.isLoading = false;
+    }
+  }
+
   ngOnInit(): void {
+    this.loadImages();
+
     this.interval_about = setInterval(() => {
       this.carouselNext();
     }, 5000);
