@@ -1,3 +1,55 @@
 .base {
   margin-top: 100px;
 }
+
+.logo {
+  max-height: 150px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.gallery-container {
+  margin-top: 50px;
+  padding: 2px;
+}
+
+.gallery-img {
+  width: 100%;
+  padding: 2px;
+  height: 300px;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(0.975);
+  filter: brightness(0.75);
+  cursor: pointer;
+}
+
+.arturo-creds {
+  color: rgb(139, 139, 139);
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: red;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all ease-in-out 0.2s;
+}
+
+a:hover {
+  color: rgba(255, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 576px) {
+  .title {
+    font-size: 30px;
+  }
+}

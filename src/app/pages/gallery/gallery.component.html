@@ -1,1 +1,27 @@
-<div class="container base"></div>
+<div class="base">
+  <!-- TITLE -->
+  <div class="d-flex align-items-center justify-content-center">
+    <img class="logo" src="assets/logo/bosa.png" />
+    <div>
+      <div class="title me-3">Board Of Sports Activites, IIT Ropar</div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="gallery-container bg-dark">
+    <div class="container text-light text-center fs-1 fw-bolder py-4">
+      Gallery Images
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-0">
+      <div *ngFor="let source of sources" class="col">
+        <img class="gallery-img" src="{{ source }}" alt="" />
+      </div>
+    </div>
+    <div class="container text-center my-5 arturo-creds">
+      <i class="fa-solid fa-camera-retro"></i>&nbsp;&nbsp;Captured by&nbsp;
+      <a href="https://www.instagram.com/arturo_iitrpr/" target="_blank"
+        >ARTURO</a
+      >
+    </div>
+  </div>
+</div>
