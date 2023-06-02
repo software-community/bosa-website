@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class GalleryComponent {
   indices = Array.from({ length: 15 }, (_, i) => i + 1);
-  sources = this.indices.map((i) => `assets/img/gallery/img-${i}.jpg`);
+
+  getImageSource(i: number): string {
+    return `assets/img/gallery/img-${i}.jpg`;
+  }
+  openImage(i: number) {
+    window.open(`assets/img/gallery/img-${i}.jpg`, '_blank');
+  }
+  // sources = this.indices.map((i) => `assets/img/gallery/img-${i}.jpg`);
 }

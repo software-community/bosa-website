@@ -13,8 +13,13 @@
       Gallery Images
     </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-0">
-      <div *ngFor="let source of sources" class="col">
-        <img class="gallery-img" src="{{ source }}" alt="" />
+      <div *ngFor="let index of indices" class="col">
+        <img
+          class="gallery-img"
+          [src]="getImageSource(index)"
+          (click)="openImage(index)"
+          alt=""
+        />
       </div>
     </div>
     <div class="container text-center my-5 arturo-creds">
