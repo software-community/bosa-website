@@ -19,6 +19,7 @@ import { TableTennisComponent } from './pages/sports/table-tennis/table-tennis.c
 import { VolleyballComponent } from './pages/sports/volleyball/volleyball.component';
 import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifting.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
+import { RepInfoCardComponent } from './components/rep-info-card/rep-info-card.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PreloaderComponent } from './components/preloader/preloader.component';
     VolleyballComponent,
     WeightliftingComponent,
     PreloaderComponent,
+    RepInfoCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
