@@ -16,3 +16,11 @@
   background-color: red;
   width: 120px;
 }
+ul {
+  list-style: none;
+}
+
+li,
+p {
+  font-size: 18px;
+}
