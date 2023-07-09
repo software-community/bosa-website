@@ -1,24 +1,12 @@
-<div class="card my-5">
-  <img
-    src="assets/img/sports/profiles/profile.jpg"
-    class="card-img-top"
-    alt=""
-  />
-  <div class="card-body">
-    <h5 class="card-title">{{ position }}</h5>
-    <p class="card-text">{{ name }}</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
-      <i class="fa-solid fa-phone text-danger me-3"></i> Contact : {{ contact }}
-    </li>
-    <li class="list-group-item">
-      <i class="fa-solid fa-envelope text-danger me-3"> </i> Email : {{ mail }}
-    </li>
-  </ul>
-  <div class="card-body">
-    <button type="button" class="btn btn-danger">
-      <i class="fa-brands fa-linkedin fa-xl"></i>&nbsp;&nbsp;LinkedIn
-    </button>
-  </div>
+<div
+  class="info-card px-3 py-5 mb-5 rounded-4 d-flex flex-column align-items-center"
+>
+  <img class="img" src="{{ img }}" alt="" />
+  <h3 class="text m-3">{{ name }}</h3>
+  <h3 class="text mb-3">{{ position }}</h3>
+  <div class="line"></div>
+  <div class="heading mt-4">e-mail</div>
+  <div class="text">{{ mail }}</div>
+  <div class="heading mt-4">Phone No.</div>
+  <div class="text">{{ contact }}</div>
 </div>

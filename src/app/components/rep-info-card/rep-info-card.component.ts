@@ -11,4 +11,5 @@ export class RepInfoCardComponent {
   @Input() mail: string | undefined;
   @Input() linkedin: string | undefined;
   @Input() position: string | undefined;
+  @Input() img: string | undefined;
 }
