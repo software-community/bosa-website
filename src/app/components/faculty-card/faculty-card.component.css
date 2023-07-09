@@ -1,0 +1,31 @@
+.faculty-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all 0.3s ease-in-out;
+  /* min-width: 450px; */
+}
+.faculty-card:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.faculty-card:hover .img {
+  border-radius: 20%;
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.position {
+  font-size: 18px;
+  font-weight: 700;
+}
