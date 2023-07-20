@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'cricket', component: CricketComponent },
   { path: 'football', component: FootballComponent },
   { path: 'hockey', component: HockeyComponent },
-  { path: 'lawnTennis', component: LawnTennisComponent },
+  { path: 'tennis', component: LawnTennisComponent },
   { path: 'tableTennis', component: TableTennisComponent },
   { path: 'volleyball', component: VolleyballComponent },
   { path: 'weightlifting', component: WeightliftingComponent },
