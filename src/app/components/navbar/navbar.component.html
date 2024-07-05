@@ -23,17 +23,20 @@
         ></i
       ></a>
       <div class="dropdown-content bg-dark">
-        <a routerLink="athletics" class="dropdown-item">Athletics</a
+        <a routerLink="aquatics" class="dropdown-item">Aquatics</a
+        ><a routerLink="athletics" class="dropdown-item">Athletics</a
         ><a routerLink="badminton" class="dropdown-item">Badminton</a
         ><a routerLink="basketball" class="dropdown-item">Basketball</a
         ><a routerLink="chess" class="dropdown-item">Chess</a
         ><a routerLink="cricket" class="dropdown-item">Cricket</a
         ><a routerLink="football" class="dropdown-item">Football</a
         ><a routerLink="hockey" class="dropdown-item">Hockey</a
-        ><a routerLink="tennis" class="dropdown-item">Tennis</a
+        ><a routerLink="tennis" class="dropdown-item">Lawn Tennis</a
         ><a routerLink="tableTennis" class="dropdown-item">Table Tennis</a
         ><a routerLink="volleyball" class="dropdown-item">Volley Ball</a
-        ><a routerLink="weightlifting" class="dropdown-item">Weight Lifting</a>
+        ><a routerLink="weightlifting" class="dropdown-item">Weight Lifting</a
+        ><a routerLink="coordinators" class="dropdown-item">Social Media Coordiantors</a
+        >
       </div>
     </div>
 
@@ -44,7 +47,8 @@
         ></i
       ></a>
       <div class="dropdown-content bg-dark">
-        <a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
+        <a routerLink="winners" class="dropdown-item">Past Inter IIT Winners</a
+        ><a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
         ><a
           href="http://www.iitrpr.ac.in/"
           target="_blank"
@@ -96,6 +100,11 @@
         >
           <a
             (click)="onMenuButtinClicked()"
+            routerLink="aquatics"
+            class="dropdown-item"
+            >Aquatics</a
+          ><a
+            (click)="onMenuButtinClicked()"
             routerLink="athletics"
             class="dropdown-item"
             >Athletics</a
@@ -131,7 +140,7 @@
             >Hockey</a
           ><a
             (click)="onMenuButtinClicked()"
-            routerLink="lawnTennis"
+            routerLink="tennis"
             class="dropdown-item"
             >Lawn Tennis</a
           ><a
@@ -149,6 +158,11 @@
             routerLink="weightlifting"
             class="dropdown-item"
             >Weight Lifting</a
+          ><a
+            (click)="onMenuButtinClicked()"
+            routerLink="coordinators"
+            class="dropdown-item"
+            >Social Media Coordiantors</a
           >
         </div>
       </div>

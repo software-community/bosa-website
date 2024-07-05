@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent {
-  indices = Array.from({ length: 15 }, (_, i) => i + 1);
+  indices = Array.from({ length: 21 }, (_, i) => i + 1);
 
   getImageSource(i: number): string {
     return `assets/img/gallery/img-${i}.jpg`;

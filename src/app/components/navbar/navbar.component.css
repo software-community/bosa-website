@@ -18,7 +18,8 @@ a {
 }
 
 .nav-menu {
-  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  background-color: rgba(0, 0, 0, 1);
   height: 65px;
   transition: background-color 0.3s ease-in-out;
 }

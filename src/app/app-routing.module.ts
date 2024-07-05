@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { WinnersComponent } from './pages/interiit-winners/winners.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AquaticsComponent } from './pages/sports/aquatics/aquatics.component';
 import { AthleticsComponent } from './pages/sports/athletics/athletics.component';
 import { BadmintonComponent } from './pages/sports/badminton/badminton.component';
 import { BasketballComponent } from './pages/sports/basketball/basketball.component';
@@ -14,11 +16,14 @@ import { LawnTennisComponent } from './pages/sports/lawn-tennis/lawn-tennis.comp
 import { TableTennisComponent } from './pages/sports/table-tennis/table-tennis.component';
 import { VolleyballComponent } from './pages/sports/volleyball/volleyball.component';
 import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifting.component';
+import { CoordinatorsComponent } from './pages/sports/socialmedia-co/coordinators.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'winners', component: WinnersComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'aquatics', component: AquaticsComponent },
   { path: 'athletics', component: AthleticsComponent },
   { path: 'badminton', component: BadmintonComponent },
   { path: 'basketball', component: BasketballComponent },
@@ -30,6 +35,7 @@ const routes: Routes = [
   { path: 'tableTennis', component: TableTennisComponent },
   { path: 'volleyball', component: VolleyballComponent },
   { path: 'weightlifting', component: WeightliftingComponent },
+  { path: 'coordinators', component: CoordinatorsComponent },
 
   {
     path: '',

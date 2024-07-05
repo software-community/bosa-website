@@ -6,6 +6,11 @@
   background-color: rgb(202, 200, 200);
 }
 
+.footerLogo{
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+
 .logo {
   max-height: 100px;
 }

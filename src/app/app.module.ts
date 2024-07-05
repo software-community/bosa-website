@@ -6,7 +6,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
+import { WinnersComponent } from './pages/interiit-winners/winners.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AquaticsComponent } from './pages/sports/aquatics/aquatics.component';
 import { AthleticsComponent } from './pages/sports/athletics/athletics.component';
 import { BadmintonComponent } from './pages/sports/badminton/badminton.component';
 import { BasketballComponent } from './pages/sports/basketball/basketball.component';
@@ -18,6 +20,7 @@ import { LawnTennisComponent } from './pages/sports/lawn-tennis/lawn-tennis.comp
 import { TableTennisComponent } from './pages/sports/table-tennis/table-tennis.component';
 import { VolleyballComponent } from './pages/sports/volleyball/volleyball.component';
 import { WeightliftingComponent } from './pages/sports/weightlifting/weightlifting.component';
+import { CoordinatorsComponent } from './pages/sports/socialmedia-co/coordinators.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { RepInfoCardComponent } from './components/rep-info-card/rep-info-card.component';
 import { FacultyCardComponent } from './components/faculty-card/faculty-card.component';
@@ -29,7 +32,9 @@ import { FacultyCardComponent } from './components/faculty-card/faculty-card.com
     HomeComponent,
     FooterComponent,
     AboutComponent,
+    WinnersComponent,
     GalleryComponent,
+    AquaticsComponent,
     AthleticsComponent,
     BadmintonComponent,
     BasketballComponent,
@@ -41,6 +46,7 @@ import { FacultyCardComponent } from './components/faculty-card/faculty-card.com
     TableTennisComponent,
     VolleyballComponent,
     WeightliftingComponent,
+    CoordinatorsComponent,
     PreloaderComponent,
     RepInfoCardComponent,
     FacultyCardComponent,

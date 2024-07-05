@@ -1,0 +1,42 @@
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: 800;
+}
+
+.title-2 {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.line {
+  height: 2px;
+  background-color: red;
+  width: 120px;
+}
+
+.card-holder {
+  max-width: 500px;
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+p {
+  font-size: 18px;
+}
+
+.smc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smc-2{
+  margin-top: 20px;
+}
