@@ -47,7 +47,8 @@
                   "maximumError": "6kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/bosa/"
             },
             "development": {
               "buildOptimizer": false,
