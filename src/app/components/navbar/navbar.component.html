@@ -34,7 +34,7 @@
         ><a routerLink="tennis" class="dropdown-item">Lawn Tennis</a
         ><a routerLink="tableTennis" class="dropdown-item">Table Tennis</a
         ><a routerLink="volleyball" class="dropdown-item">Volley Ball</a
-        ><a routerLink="weightlifting" class="dropdown-item">Weight Lifting</a
+        ><a routerLink="weightlifting" class="dropdown-item">Weightlifting</a
         ><a routerLink="coordinators" class="dropdown-item">Social Media Coordiantors</a
         >
       </div>
@@ -47,15 +47,20 @@
         ></i
       ></a>
       <div class="dropdown-content bg-dark">
-        <a routerLink="winners" class="dropdown-item">Past Inter IIT Winners</a
-        ><a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
-        ><a href="../../../assets/Annual Report 2023-24.pdf" class="dropdown-item" download="BOSA Annual Report 2023-24">Past Events of BOSA</a
-        ><a
+        <a routerLink="winners" class="dropdown-item">Past Inter IIT Winners</a>
+        <a routerLink="gallery" class="dropdown-item">BOSA Gallery</a>
+        <a href="../../../assets/Annual Report 2023-24.pdf" class="dropdown-item my-super-dropdown" download="BOSA Annual Report 2023-24">
+          Past Events of BOSA
+          <div class="sub-dropdown-item">
+            PDF File
+          </div>
+        </a>
+        <a
           href="http://www.iitrpr.ac.in/"
           target="_blank"
-          class="dropdown-item"
-          >IIT Ropar Website</a
-        >
+          class="dropdown-item">
+          IIT Ropar Website
+        </a>
       </div>
     </div>
     <a class="nav-link nav-dropdown mx-3" routerLink="about">
@@ -158,7 +163,7 @@
             (click)="onMenuButtinClicked()"
             routerLink="weightlifting"
             class="dropdown-item"
-            >Weight Lifting</a
+            >Weightlifting</a
           ><a
             (click)="onMenuButtinClicked()"
             routerLink="coordinators"
@@ -183,15 +188,15 @@
             dropdownContentCollapseOpen: isImportantLinksDropDownOpen
           }"
         >
-          <a routerLink="winners" class="dropdown-item">Past Inter IIT Winners</a
-          ><a routerLink="gallery" class="dropdown-item">BOSA Gallery</a
-          ><a href="../../../assets/Annual Report 2023-24.pdf" class="dropdown-item" download="BOSA Annual Report 2023-24">Past Events of BOSA</a
-          ><a
+          <a routerLink="winners" class="dropdown-item">Past Inter IIT Winners</a>
+          <a routerLink="gallery" class="dropdown-item">BOSA Gallery</a>
+          <a href="../../../assets/Annual Report 2023-24.pdf" class="dropdown-item" download="BOSA Annual Report 2023-24">Past Events of BOSA <span style="text-decoration: underline; color: #09f;">(PDF File)</span></a>
+          <a
             href="http://www.iitrpr.ac.in/"
             target="_blank"
-            class="dropdown-item"
-            >IIT Ropar Website</a
-          >
+            class="dropdown-item">
+            IIT Ropar Website
+          </a>
         </div>
       </div>
       <div
